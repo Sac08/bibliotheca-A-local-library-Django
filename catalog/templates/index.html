@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+{% block title %} <title>HomePage</title>
+{% endblock %}
+{% block content %}
+<h1>Bibliotheca Home</h1>
+
+  <p>Welcome to <em>biblioteca</em>, This Library has collection of different books for veriety of users , the book is only issued to registered users , along with they can see the books that they borrowed from bibliotheca(spanish , en:library) . In this website the librarian can re-new overdue book of perticaular user and can add new , delete existing , update existing book / Author in bibliotheca. </p>
+  <p>The Books/authors info can be accessed by any users , but they are not allowed to view the books they borrowed unless they are logged in.</p>
+
+<h2>Contents Present In Bibliotheca</h2>
+
+  <p>The library has the following record counts:</p>
+  <ul>
+    <li><strong>Total Books:</strong> {{ num_books }}</li>
+    <li><strong>Total Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Books On loan:</strong>{{num_instances_}}</li>
+    <li><strong>All Authors:</strong> {{ num_authors }}</li>
+  </ul>
+  <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+
+{% endblock %}

@@ -1,0 +1,5 @@
+# Text backup files
+*.bak
+
+#it should not be moved to git
+*.sqlite3
