@@ -1,3 +1,6 @@
+body {
+    background-color: lightblue;
+}
 .sidebar-nav {
     margin-top: 20px;
     padding: 0;
@@ -26,7 +29,7 @@
  #social-fb:hover {
      color: #3B5998;
  }
- #social-tw:hover {
+ #social-gt:hover {
      color: #4099FF;
  }
  #social-gp:hover {
@@ -35,6 +38,8 @@
  #social-em:hover {
      color: #f39c12;
  }
-body {
-    background: white url("images/libraryPhoto.jpg") no-repeat right bottom;
-}
+    body,html{
+        height: 100%;
+    }
+
+ 

@@ -13,6 +13,7 @@ urlpatterns = [
 urlpatterns += [   
     url(r'^mybooks/$', views.LoanedBooksByUserListView.as_view(), name='my-borrowed'),
     url(r'^borrowed/$', views.LoanedBooksAllListView.as_view(), name='all-borrowed'),
+    url(r'^borrowed/search$', views.BlogSearchListView.as_view(), name='search'),   
 ]
 urlpatterns += [   
     url(r'^book/(?P<pk>[-\w]+)/renew/$', views.renew_book_librarian, name='renew-book-librarian'),

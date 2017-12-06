@@ -2,7 +2,12 @@
 
 {% block content %}
 
-<h1>Author List</h1>
+
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">AUTHORS LIST</button><br>
+  <div id="demo" class="collapse">
+    This page displays list of all authors.
+  </div>
+  <br>
 
 {% if author_list %}
   <ul>

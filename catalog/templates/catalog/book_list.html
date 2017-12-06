@@ -1,8 +1,11 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-    <h1>Book List</h1>
-
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">BOOKS LIST</button><br>
+  <div id="demo" class="collapse">
+    This page displays list of all books present in bibliotheca.
+  </div>
+  <br>
     {% if book_list %}
     <ul>
 
